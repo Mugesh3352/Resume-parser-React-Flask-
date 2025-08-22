@@ -1,6 +1,19 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ======================================================================
+# Python Backend (.gitignore)
+# ======================================================================
 
-# dependencies
-/node_modules
-/.venv
+# Virtual environment
+.venv/
+env/
+ENV/
 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temp / runtime
+temp_resumes/
+*.log
+*.sqlite3

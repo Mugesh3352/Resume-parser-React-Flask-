@@ -1,0 +1,18 @@
+# ======================================================================
+# Root .gitignore
+# Handles OS junk + IDE files + temp folders
+# ======================================================================
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editors
+.vscode/
+.idea/
+*.iml
+
+# Global temp folders
+*.log
+*.tmp

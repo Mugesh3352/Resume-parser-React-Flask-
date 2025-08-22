@@ -1,0 +1,272 @@
+.app {
+    min-height: 100vh;
+    background: #f4f6fa;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+  }
+  
+  .container {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Titles */
+  .title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2a4d9b;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* Upload Box */
+  .upload-box {
+    border: 2px dashed #2a4d9b;
+    border-radius: 12px;
+    background: #f8faff;
+    padding: 2rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .upload-box:hover {
+    background: #eef3ff;
+  }
+  
+  .file-link {
+    color: #2a4d9b;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .file-selected {
+    font-weight: 600;
+    color: #28a745;
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    width: 100%;
+    background: #e6e9f5;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+  
+  .progress {
+    height: 10px;
+    background: #2a4d9b;
+    transition: width 0.3s ease;
+  }
+  
+  /* Form */
+  .form-group {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0.9rem;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    transition: 0.2s;
+  }
+  
+  textarea:focus {
+    border-color: #2a4d9b;
+    box-shadow: 0 0 0 3px rgba(42, 77, 155, 0.2);
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    width: 100%;
+    background: #2a4d9b;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    background: #1e3875;
+  }
+  
+  .btn-primary:disabled {
+    background: #9bb3e1;
+    cursor: not-allowed;
+  }
+  
+  .btn-secondary {
+    background: #f0f5ff;
+    color: #2a4d9b;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background: #dce6ff;
+  }
+  
+  /* Alerts */
+  .alert {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .alert.error {
+    background: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    color: #b30000;
+  }
+  
+  /* Results */
+  .results {
+    margin-top: 2rem;
+  }
+  
+  .results-title {
+    text-align: center;
+    color: #2a4d9b;
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  
+  .results-table th {
+    background: #f0f4ff;
+    font-weight: 600;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .results-table tr:nth-child(even) {
+    background: #fafbff;
+  }
+  
+  .results-table tr:hover {
+    background: #f2f6ff;
+  }
+  
+
+  /* Small devices (mobile first) */
+@media (max-width: 640px) {
+    .app {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 0.95rem;
+    }
+  
+    textarea {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+    }
+  
+    .results-title {
+      font-size: 1.5rem;
+    }
+  
+    .results-table th,
+    .results-table td {
+      padding: 0.7rem;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .container {
+      max-width: 90%;
+      padding: 2rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .btn-secondary {
+      margin: 0.3rem 0.3rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
+  /* Large devices (desktop) */
+  @media (min-width: 1025px) {
+    .container {
+      max-width: 850px;
+    }
+  
+    .results-table th,
+    .results-table td {
+      font-size: 1rem;
+    }
+  }
