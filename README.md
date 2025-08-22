@@ -65,27 +65,6 @@ curl -X POST \\
 `  `-F 'job\_description="We are looking for a software engineer with strong Python, React, and database skills. Experience with Flask and NLP is a plus."'
 
 *Replace /path/to/your/resumes.zip with the actual path to your ZIP file.*
-### **Response Format (JSON)**
-Upon successful processing, the API returns a JSON object containing a list of match results.
-
-{\
-`  `"message": "Resumes processed successfully",\
-`  `"results": [\
-`    `{\
-`      `"candidate\_name": "John Doe",\
-`      `"match\_percentage": 85.50,\
-`      `"top\_skills": ["python", "react", "database"],\
-`      `"missing\_skills": ["flask", "nlp"]\
-`    `},\
-`    `{\
-`      `"candidate\_name": "Jane Smith",\
-`      `"match\_percentage": 60.00,\
-`      `"top\_skills": ["python", "database"],\
-`      `"missing\_skills": ["react", "flask", "nlp"]\
-`    `}\
-`    `// ... more candidate results\
-`  `]\
-}
 ## **🧑‍💻 Core Logic Breakdown**
 The backend orchestrates several key functions to achieve the resume matching:
 ### **File Extraction and Parsing**
